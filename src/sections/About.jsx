@@ -18,9 +18,11 @@ const About = () => {
                         <img src='/assets/grid1.png' alt='grid-1' className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
                             <p className='grid-headtext'>Hi, I am Emre</p>
-                            <p className='grid-subtext'>With 2 years of experience,
-                                I have honed my skills in frontend and backend development,
-                                with a focus on animated 3D websites
+                            <p className='grid-subtext'>I am an aspiring software engineer with 2 years of experience in web development
+                                and a passion for frontend development, while continually improving my backend
+                                and full-stack skills. I am completing my Bachelor&apos;s in Software Engineering
+                                in just two weeks and love helping businesses create or refresh their websites
+                                to enhance their online presence and drive growth.
                             </p>
                         </div>
                     </div>
@@ -30,7 +32,9 @@ const About = () => {
                         <img src='/assets/grid2.png' alt='grid-2' className='w-full sm:h-[276px] h-fit object-contain' />
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>I specialise in JavaScript/TypeScript with a focus on React and Next.js ecosystems</p>
+                            <p className='grid-subtext'>I specialise in Java, JavaScript, TypeScript, Next.js, and React.
+                                I am constantly learning new technologies and pride myself on being highly adaptable,
+                                ready to tackle challenges and embrace innovation in a rapidly evolving field.</p>
                         </div>
                     </div>
                 </div>
@@ -60,7 +64,8 @@ const About = () => {
                         <div>
                             <p className='grid-headtext'>My Passion for Coding</p>
                             <p className='grid-subtext'>I love solving problems and building things through code.
-                                Coding is not just my profession, it is my passion
+                                Coding is not just my profession, it is my passion. I stay committed to continuous learning
+                                and am always on the lookout for ways to improve my craft and keep up with the latest industry trends.
                             </p>
                         </div>
                     </div>
