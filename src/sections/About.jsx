@@ -53,8 +53,11 @@ const About = () => {
                         </div>
                         <div>
                             <p className='grid-headtext'>I am open to working remotely</p>
-                            <p className='grid-subtext'>I am based in Atlanta, GA, USA</p>
-                            <Button name='Contact Me' isBeam containerClass='w-full mt-10'/>
+                            <p className='grid-subtext'>I am based in Atlanta, GA, USA, I embrace the flexibility of remote work
+                                and thrive in collaborative digital environments. Whether it&apos;s contributing to a startup’s growth
+                                or enhancing a team’s efficiency, I bring strong communication, problem-solving, and development
+                                skills to the table. Let’s build something amazing together!</p>
+                            <a href="#contact" onClick={()=>{}}><Button name='Contact Me' isBeam containerClass='w-full mt-10' href='#contact'/></a>
                         </div>
                     </div>
                 </div>
