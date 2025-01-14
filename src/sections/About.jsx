@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Globe from "react-globe.gl";
 import Button from "../components/Button.jsx";
+import {AnimatedBeamDemo} from "../components/BiDirectionalBeam.tsx";
+import {NumberTicker} from "../components/NumberTicker.tsx";
 
 const About = () => {
     const handleCopy =()=> {
@@ -15,8 +17,8 @@ const About = () => {
             <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full '>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src='/assets/grid1.png' alt='grid-1' className='w-full sm:h-[276px] h-fit object-contain' />
-                        <div>
+                        <img src='/assets/meincolor.png' alt='grid-1' className='w-full sm:h-[276px] h-fit object-contain ' />
+                        <div className='mt-auto'>
                             <p className='grid-headtext'>Hi, I am Emre</p>
                             <p className='grid-subtext'>I am an aspiring software engineer with 2 years of experience in web development
                                 and a passion for frontend development, while continually improving my backend
@@ -29,12 +31,20 @@ const About = () => {
                 </div>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src='/assets/grid2.png' alt='grid-2' className='w-full sm:h-[276px] h-fit object-contain' />
-                        <div>
-                            <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>I specialise in Java, JavaScript, TypeScript, Next.js, and React.
-                                I am constantly learning new technologies and pride myself on being highly adaptable,
-                                ready to tackle challenges and embrace innovation in a rapidly evolving field.</p>
+                        {/*<AnimatedBeamDemo className="w-full sm:h-[276px] h-fit object-contain" />*/}
+                        <img src='/assets/grid3.png' alt='grid-3' className='w-full sm:h-[266px] h-fit object-contain' />
+
+                        {/*<img src='/assets/grid2.png' alt='grid-2' className='w-full sm:h-[276px] h-fit object-contain' />*/}
+                        <div className='mt-auto'>
+                            <p className='grid-headtext'>My Passion for Coding</p>
+                            <p className='grid-subtext'>I love solving problems and building things through code.
+                                Coding is not just my profession, it is my passion. I stay committed to continuous learning
+                                and am always on the lookout for ways to improve my craft and keep up with the latest industry trends.
+                            </p>
+                            {/*<p className='grid-headtext'>Tech Stack</p>*/}
+                            {/*<p className='grid-subtext'>I specialise in Java, JavaScript, TypeScript, Next.js, and React.*/}
+                            {/*    I am constantly learning new technologies and pride myself on being highly adaptable,*/}
+                            {/*    ready to tackle challenges and embrace innovation in a rapidly evolving field.</p>*/}
                         </div>
                     </div>
                 </div>
@@ -51,7 +61,7 @@ const About = () => {
                                    bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                             />
                         </div>
-                        <div>
+                        <div className='mt-auto'>
                             <p className='grid-headtext'>I am open to working remotely</p>
                             <p className='grid-subtext'>I am based in Atlanta, GA, USA, I embrace the flexibility of remote work
                                 and thrive in collaborative digital environments. Whether it&apos;s contributing to a startup’s growth
@@ -63,32 +73,35 @@ const About = () => {
                 </div>
                 <div className='xl:col-span-2 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src='/assets/grid3.png' alt='grid-3' className='w-full sm:h-[266px] h-fit object-contain' />
-                        <div>
-                            <p className='grid-headtext'>My Passion for Coding</p>
-                            <p className='grid-subtext'>I love solving problems and building things through code.
-                                Coding is not just my profession, it is my passion. I stay committed to continuous learning
-                                and am always on the lookout for ways to improve my craft and keep up with the latest industry trends.
-                            </p>
+                        <div className="flex-grow flex items-center justify-center min-h-0">
+                        <AnimatedBeamDemo className="w-full sm:h-[276px] h-auto object-contain" />
+                        </div >
+                            <div className='mt-auto'>
+                            <p className='grid-headtext'>Tech Stack</p>
+                            <p className='grid-subtext'>I specialise in Java, JavaScript, TypeScript, Next.js, and
+                                React.
+                                I am constantly learning new technologies and pride myself on being highly adaptable,
+                                ready to tackle challenges and embrace innovation in a rapidly evolving field.</p>
+
                         </div>
                     </div>
                 </div>
                 <div className='xl:col-span-1 xl:row-span-2'>
                     <div className='grid-container'>
-                        <img src='/assets/grid4.png' alt='grid-4' className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top' />
-                        <div className='space-y-2'>
-                            <p className='grid-subtext text-center'>Contact me</p>
-                            <div className='copy-container' onClick={handleCopy}>
-                                <img src={hasCopied ? '/assets/tick.svg' : '/assets/copy.svg'} alt='copy' />
-                                <p className='lg:text-2xl md:text-xl font-medium text-gray_gradient text-white'>ediricanli@icloud.com</p>
+                            <img src='/assets/grid4.png' alt='grid-4' className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top'/>
+                            <div className='space-y-2 mt-auto'>
+                                <p className='grid-headtext text-center'>Contact me</p>
+                                <div className='copy-container' onClick={handleCopy}>
+                                    <img src={hasCopied ? '/assets/tick.svg' : '/assets/copy.svg'} alt='copy'/>
+                                    <p className='lg:text-2xl md:text-xl font-medium text-gray_gradient text-white'>ediricanli@icloud.com</p>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
             </div>
 
         </section>
-    )
+)
 }
 export default About
