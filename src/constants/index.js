@@ -21,6 +21,51 @@ export const navLinks = [
   }
 ];
 
+export const alt_about_data = [
+  {
+    title: "2024",
+    content: {
+      line1: "",
+      line2: "",
+      Line3: ""
+    },
+    images: {
+      img1: "",
+      img2: "",
+      img3: "",
+      img4: ""
+    }
+  },
+  {
+    title: "2023",
+    content: {
+      line1: "",
+      line2: "",
+      Line3: "",
+      images: {
+        img1: "",
+        img2: "",
+        img3: "",
+        img4: ""
+      }
+    }
+  },
+  {
+    title: "2022",
+    content: {
+      line1: "",
+      line2: "",
+      Line3: ""
+    },
+    images: {
+      img1: "",
+      img2: "",
+      img3: "",
+      img4: ""
+    }
+  }
+];
+
 export const clientReviews = [
   {
     id: 1,
