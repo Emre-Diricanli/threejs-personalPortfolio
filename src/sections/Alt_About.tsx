@@ -3,6 +3,7 @@ import { Timeline } from "../components/timeline";
 import { alt_about_data } from "../constants";
 import { AnimatedBeamDemo } from "../components/BiDirectionalBeam";
 import Globe from "react-globe.gl";
+import GlobeDemo from "../components/githubglobe";
 
 const Alt_About = () => {
   const handleCopy = () => {
@@ -63,45 +64,48 @@ const Alt_About = () => {
     {
       title: "Availability",
       content: (
-        <div>
-          <p className="text-white text-5xl md:text-3xl sm:text-xl font-bold  mb-8">
-            I am open to working remotely
-          </p>
-          <div className="mb-8">
-            <p className="grid-subtext text-2xl md:text-lg font-light mb-5">
-              I am based in Atlanta, GA, USA, I embrace the flexibility of
-              remote work and thrive in collaborative digital environments.
-              Whether it&apos;s contributing to a startup&apos;s growth or
-              enhancing a team&apos;s efficiency, I bring strong communication,
-              problem-solving, and development skills to the table. Let&apos;s
-              build something amazing together!
-            </p>
+          <div>
+              <p className="text-white text-5xl md:text-3xl sm:text-xl font-bold  mb-8">
+                  I am open to working remotely
+              </p>
+              <div className="mb-8">
+                  <p className="grid-subtext text-2xl md:text-lg font-light mb-5">
+                      I am based in Atlanta, GA, USA, I embrace the flexibility of
+                      remote work and thrive in collaborative digital environments.
+                      Whether it&apos;s contributing to a startup&apos;s growth or
+                      enhancing a team&apos;s efficiency, I bring strong communication,
+                      problem-solving, and development skills to the table. Let&apos;s
+                      build something amazing together!
+                  </p>
+              </div>
+              <div className=" h-full w-full sm:h-[326px]  flex flex-col items-center object-contain">
+                  <GlobeDemo/>
+              </div>
+              {/*<div className="rounded-3xl w-full sm:h-[326px] h-fit flex flex-col items-center bg-black-600">*/}
+              {/*    <Globe*/}
+              {/*        height={326}*/}
+              {/*        width={326}*/}
+              {/*        backgroundColor="rgba(0,0,0,0)"*/}
+              {/*        showAtmosphere*/}
+              {/*        showGraticules*/}
+              {/*        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"*/}
+              {/*        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"*/}
+              {/*    />*/}
+              {/*</div>*/}
           </div>
-          <div className="rounded-3xl w-full sm:h-[326px] h-fit flex flex-col items-center bg-black-600">
-            <Globe
-              height={326}
-              width={326}
-              backgroundColor="rgba(0,0,0,0)"
-              showAtmosphere
-              showGraticules
-              globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-              bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-            />
-          </div>
-        </div>
       )
     },
-    {
-      title: "Passion",
-      content: (
-        <div>
-          <p className="text-white text-5xl md:text-3xl sm:text-xl font-bold  mb-8">
-            My Passion for Coding
-          </p>
-          <div className="mb-8">
-            <p className="grid-subtext text-2xl md:text-lg font-light mb-5">
-              I love solving problems and building things through code. Coding
-              is not just my profession, it is my passion. I stay committed to
+      {
+          title: "Passion",
+          content: (
+              <div>
+                  <p className="text-white text-5xl md:text-3xl sm:text-xl font-bold  mb-8">
+                      My Passion for Coding
+                  </p>
+                  <div className="mb-8">
+                      <p className="grid-subtext text-2xl md:text-lg font-light mb-5">
+                          I love solving problems and building things through code. Coding
+                          is not just my profession, it is my passion. I stay committed to
               continuous learning and am always on the lookout for ways to
               improve my craft and keep up with the latest industry trends.
             </p>
